@@ -21,20 +21,20 @@ export default function Footer() {
         <Container maxWidth="lg">
           <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Help</Box>
+              <Box borderBottom={1}>About Us</Box>
               <Box>
                 <Link href="/" color="inherit">
-                  Contact
+                  Who are we ?
                 </Link>
               </Box>
               <Box>
                 <Link href="/" color="inherit">
-                  Support
+                  Contact us
                 </Link>
               </Box>
               <Box>
                 <Link href="/" color="inherit">
-                  Privacy
+                  Privacy policy
                 </Link>
               </Box>
             </Grid>
@@ -52,20 +52,20 @@ export default function Footer() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Messages</Box>
+              <Box borderBottom={1}>Social Media</Box>
               <Box>
                 <Link href="/" color="inherit">
-                  Backup
+                  LinkedIn
                 </Link>
               </Box>
               <Box>
                 <Link href="/" color="inherit">
-                  History
+                  Facebook
                 </Link>
               </Box>
               <Box>
                 <Link href="/" color="inherit">
-                  Roll
+                  Instagram
                 </Link>
               </Box>
             </Grid>
