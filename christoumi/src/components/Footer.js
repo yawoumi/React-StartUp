@@ -1,41 +1,80 @@
 import React from 'react';
+import styled from "styled-components";
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import Link from '@material-ui/core/Link';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
  
-const styles = theme => ({
-  root: {
-    ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    marginTop: theme.spacing.unit * 8,
-    padding: `${theme.spacing.unit * 6}px 0`,
-  }
-});
- 
-function Footer(props) {
-  const { classes } = props;
- 
+export default function Footer() {
   return (
-    <footer className={classes.footer}>
-      <Paper className={classes.root} elevation={1}>
-        <Typography variant="h5" component="h3">
-          React App with Material UI
-        </Typography>
-        <Typography component="p">
-          @2018 All right reserved
-        </Typography>
-      </Paper>
+    <footer>
+      <Box
+        px={{ xs: 3, sm: 10 }}
+        py={{ xs: 5, sm: 10 }}
+        bgcolor="text.secondary"
+        color="white"
+      >
+        <Container maxWidth="lg">
+          <Grid container spacing={5}>
+            <Grid item xs={12} sm={4}>
+              <Box borderBottom={1}>Help</Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Contact
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Support
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Privacy
+                </Link>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box borderBottom={1}>Account</Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Login
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Register
+                </Link>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box borderBottom={1}>Messages</Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Backup
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  History
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="inherit">
+                  Roll
+                </Link>
+              </Box>
+            </Grid>
+          </Grid>
+          <Box textAlign="center" pt={{ xs: 5, sm: 10 }} pb={{ xs: 5, sm: 0 }}>
+            Christoumi | Christelle Randriamahefa & Yawoumihani Hassani &reg; {new Date().getFullYear()}
+          </Box>
+        </Container>
+      </Box>
     </footer>
   );
 }
- 
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
- 
-export default withStyles(styles)(Footer);
