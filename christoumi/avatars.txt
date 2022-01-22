@@ -1,0 +1,28 @@
+npm install avataaars --save
+
+<Avatar
+  avatarStyle='Circle'
+  topType='LongHairNotTooLong'
+  accessoriesType='Prescription02'
+  hairColor='Black'
+  facialHairType='Blank'
+  clotheType='Hoodie'
+  clotheColor='Pink'
+  eyeType='Wink'
+  eyebrowType='DefaultNatural'
+  mouthType='Tongue'
+  skinColor='DarkBrown'
+/>
+
+<Avatar
+  avatarStyle='Circle'
+  topType='Hijab'
+  accessoriesType='Prescription02'
+  hatColor='Pink'
+  clotheType='BlazerShirt'
+  eyeType='Happy'
+  eyebrowType='DefaultNatural'
+  mouthType='Smile'
+  skinColor='DarkBrown'
+/>
+
