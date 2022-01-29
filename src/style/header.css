@@ -1,0 +1,71 @@
+.bar {
+    position: static;
+}
+
+.container {
+    background: linear-gradient(#77dbc7,20%,#f6f8f8); 
+}
+
+.typography {
+    text-align: center;    
+}
+
+.box {
+    flex-grow: 1;
+    display: inline-flex; 
+    
+}
+
+.menu-appbar {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-appbar ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.menu-appbar li a{
+    display: block;
+    color: black;
+}
+
+.menu-appbar a:hover{
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+}
+
+.logo{
+    flex: 1;
+    width: null;
+    height: null;
+    object-fit: contain;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2
+{
+  font-size: 20px;
+  text-shadow: -1px -1px rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -3px 0 4px #000;
+  font-family:"Segoe print", Arial, Helvetica, sans-serif;
+  color: #1abc9c;
+  margin:10px auto;
+  font-weight:lighter;
+  -moz-box-shadow:none;  
+  -webkit-box-shadow: none;  
+  box-shadow:none;  
+  text-align:center;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 150px;
+    vertical-align:top ;
+}

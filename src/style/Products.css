@@ -1,0 +1,41 @@
+.containObject{
+  background: #f6f8f8;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #1abc9c;
+    background-color: #77dbc7;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 138px 14px 100px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #1abc9c;
+  }
+  
+  h3{
+   text-shadow: #1abc9c;
+   text-align: center;
+  }
+
+  .textP{
+      text-align: center;
+  }
