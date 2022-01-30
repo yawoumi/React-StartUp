@@ -22,4 +22,6 @@ To make this project we used :
 
 ![image](https://user-images.githubusercontent.com/72503019/151680976-02467a69-404e-41d3-83a6-3ace32417198.png)
 
+## What you should know
 
+Install node_modules before starting the app.
